@@ -1,0 +1,144 @@
+.sec-contact{
+    padding: 70px 0;
+}
+
+.sec-contact .section-container{
+    display: grid;
+    grid-template-columns: 55% 45%;
+    grid-gap: 20px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-contact .section-container{
+        grid-template-columns: 1fr;
+    }
+
+    .sec-contact .right img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.sec-contact .right{
+    display: flex;
+    align-items: flex-end;
+}
+
+.sec-contact form{
+    margin-top: 50px;
+}
+
+.sec-contact form .row.one{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 15px;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-contact form .row.one{
+        grid-template-columns: 1fr;
+        grid-row-gap: 20px;
+    }
+}
+
+.sec-contact form .row{
+    margin-bottom: 20px;
+}
+
+.sec-contact form .row.submit{
+    text-align: right;
+}
+
+.sec-contact form .input-group{
+    display: flex;
+    flex-direction: column;
+}
+
+.sec-contact form .input-group label{
+    font-family: montserratmedium, sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 8px;
+}
+
+.sec-contact form .input-group input,
+.sec-contact form .input-group textarea{
+    min-height: 42px;
+    border: 1px solid #B6B6B6;
+    border-radius: 5px;
+    background-color: #F4F6F9;
+    padding: 3px 3px 3px 12px;
+    font-size: 14px;
+    line-height: 40px;
+    outline: none;
+    color: #6d6d6d;
+    width: 100%;
+}
+
+.sec-contact form .input-group textarea{
+    font-family: open_sansregular, sans-serif;
+}
+
+.sec-contact form .input-group input:hover,
+.sec-contact form .input-group textarea:hover{
+    background-color: #FFFFFF;
+}
+
+.sec-contact form .input-group textarea{
+    min-height: 200px;
+    resize: none;
+}
+
+.sec-contact input::placeholder,
+.sec-contact textarea::placeholder{
+    font-family: open_sansregular, sans-serif;
+}
+
+.sec-contact textarea::placeholder{
+    /*line-height: 190px;*/
+    padding-left: 10px;
+}
+
+.sec-contact form input[type="submit"]{
+    width: 121px;
+    height: 36px;
+    background-color: #3D387D;
+    font-size: 12px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    color: #FFFFFF;
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: open_sansregular, sans-serif;
+    outline: none;
+    border-width: 0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1199px) {
+    .sec-contact .left .headline{
+        font-size: 32px;
+    }
+}
+
+.sec-contact .sub{
+    font-family: hind_vadodaramedium, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e80566;
+}
+
+.sec-contact .title{
+    font-family: fira_sansextrabold, sans-serif;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.sec-contact .description{
+    font-family: hind_vadodaralight, sans-serif;
+    font-size: 17px;
+    color: #595959;
+    margin-bottom: 20px;
+}

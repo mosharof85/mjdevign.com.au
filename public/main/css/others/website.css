@@ -1,0 +1,92 @@
+.sec-hero .hero-left{
+    background-size: 65% 100%;
+}
+
+.sec-hero .left .left-container{
+    position: relative;
+}
+
+.sec-hero .left .circle{
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    animation: zoom 4s infinite;
+}
+
+.sec-hero .left .path{
+    position: absolute;
+    top: 0;
+    right: -100%;
+    animation: zoom2 4s infinite;
+}
+
+.sec-hero .left .triangle{
+    position: absolute;
+    bottom: 50px;
+    left: -150px;
+    animation: zoom 4s infinite;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .left .circle{
+        top: -50px;
+        left: 15px;
+    }
+    .sec-hero .left .path{
+        bottom: 70px;
+        top: initial;
+        right: 0;
+    }
+
+    .sec-hero .left .triangle{
+        top: 0;
+        bottom: initial;
+        left: 0;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.8);
+    }
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(.5);
+    }
+    50%{
+        transform: scale(.8);
+    }
+    100%{
+        transform: scale(.5);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero{
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .sec-info .out-container .left .img-wrapper{
+        height: 630px;
+        max-height: initial;
+    }
+}
+
+.sec-package .package.four .list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.sec-package .package.four .list-item img{
+    margin-right: 20px;
+}

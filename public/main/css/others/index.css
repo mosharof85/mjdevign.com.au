@@ -1,0 +1,102 @@
+header .nav-link:not(.sign-in) a{
+    color: #FFFFFF;
+}
+
+header .nav-link.dropdown,
+header .nav-link.sign-in{
+    margin-left: 150px;
+}
+
+@media screen and (max-width: 991px) {
+    header .nav-link.dropdown,
+    header .nav-link.sign-in{
+        margin-left: 0;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .sec-hero .hero-left{
+        background : url("../../images/others/index/1920.png") no-repeat top right;
+        background-size: 100% 100%;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1499px) {
+    .sec-hero .hero-left{
+        background : url("../../images/others/index/1440.png") no-repeat top right;
+        background-size: 100% 100%;
+    }
+}
+
+.sec-hero .section-container .right{
+    text-align: right;
+    margin-left: 40px;
+    margin-top: -100px;
+    position: relative;
+}
+
+.sec-hero .section-container .right img.main{
+    width: 479px;
+    height: 483px;
+}
+
+.sec-hero .right .circle{
+    width: 23px !important;
+    height: 23px !important;
+}
+
+.sec-hero .right .triangle{
+    width: 101px !important;
+    height: 82px !important;
+}
+
+.sec-hero .right .triangle2{
+    width: 68px !important;
+    height: 55px !important;
+}
+
+.sec-hero .right .circle{
+    position: absolute;
+    top: 50%;
+    left: 0;
+    animation: zoom 4s infinite;
+}
+
+.sec-hero .right .triangle2{
+    position: absolute;
+    top: 100px;
+    right: 20px;
+    animation: zoom 4s infinite;
+}
+
+.sec-hero .right .triangle{
+    position: absolute;
+    bottom: 50px;
+    left: -50px;
+    animation: zoom 4s infinite;
+}
+
+@keyframes zoom {
+    0%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.8);
+    }
+}
+
+@media screen and (min-width: 1920px) {
+    .sec-info .out-container .left .img-wrapper{
+        height: 630px;
+        max-height: initial;
+    }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1440px){
+    .sec-hero .section-container .left h4 {
+        margin-top: 0;
+    }
+}

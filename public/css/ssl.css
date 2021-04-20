@@ -1,0 +1,119 @@
+.secure{
+    color: #595959;
+    font-family: open_sansregular, sans-serif;
+    font-size: 16px;
+}
+
+.card-body{
+    border: 1px solid #E5E7F2;
+    border-radius: 16px;
+    padding: 0;
+}
+
+.secure+.card-body > .container{
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.card-info {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 10px 10px 25px;
+    border-bottom: 1px solid #E5E7F2;
+}
+
+.card-info .radio label{
+    font-family: open_sansregular, sans-serif;
+    font-size: 18px;
+    color: #333333;
+    margin-left: 15px;
+}
+
+.card-parts{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.card-parts .title{
+    color: #595959;
+    font-size: 16px;
+    font-family: open_sansregular, sans-serif;
+    margin-bottom: 30px;
+}
+
+.card-parts .left{
+    padding-left: 25px;
+}
+
+.card-parts .right{
+    padding-left: 25px;
+    position: relative;
+}
+
+.card-parts .right::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 1px;
+    height: 100%;
+    top: 25%;
+    display: inline-block;
+    background-color: #E5E7F2;
+}
+
+.card-parts .right .total{
+    font-family: 'montserratregular', sans-serif;
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.ssl{
+    padding: 50px 0 0 !important;
+    flex-wrap: wrap;
+    height: fit-content;
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    position: relative;
+}
+
+.ssl::before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: calc(100% + 50px);
+    height: 1px;
+    top: 35px;
+    display: inline-block;
+    background-color: #E5E7F2;
+}
+
+.ssl .ssl-img{
+    margin-right: auto;
+}
+
+.ssl .footer{
+    flex: 0 0 100%;
+    position: relative;
+    padding-top: 10px;
+}
+
+.ssl .footer::before{
+    content: '';
+    position: absolute;
+    left: -25px;
+    width: calc(100% + 50px);
+    height: 1px;
+    top: 0;
+    display: inline-block;
+    background-color: #E5E7F2;
+}
+
+.ssl .footer p{
+    color: #595959;
+    font-size: 15px;
+}
+
+.ssl .footer p a{
+    color: inherit;
+}

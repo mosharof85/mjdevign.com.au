@@ -1,0 +1,77 @@
+header{
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    background-color: #ffffff;
+}
+
+header .logo{
+    display: flex;
+    padding-left: 20px;
+}
+
+header .logo .name{
+    font-family: poppinssemibold, sans-serif;
+    font-size: 22px;
+}
+
+header .logo .tag{
+    font-size: 17px;
+    font-family: hind_vadodaralight, sans-serif;
+}
+
+header .logo .info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 10px;
+}
+
+header .login{
+    display: flex;
+    align-items: center;
+    padding-right: 20px;
+}
+
+header .login ul{
+    margin-bottom: 0;
+}
+
+header .login .bell{
+    border-right: 1px solid #F0F2F7;
+    display: flex;
+}
+
+header .login img{
+    margin-right: 15px;
+}
+
+header .login svg{
+    width: 26px;
+    height: 26px;
+    fill: #384AD3;
+    margin-left: 85px;
+    margin-right: 10px;
+}
+
+header .login span{
+    color: #8f98e2;
+    font-size: 15px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 590px) {
+    header{
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    header .login{
+        margin-top: 20px;
+    }
+}

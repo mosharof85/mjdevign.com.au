@@ -1,0 +1,54 @@
+.my-account{
+    padding: 25px 50px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    display: grid;
+    grid-template-columns: 2fr 3fr;
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 980px) {
+    .my-account{
+        grid-template-columns: 1fr;
+    }
+}
+
+.my-account .left img{
+    width: 100%;
+}
+
+.my-account .right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.my-account .right .title{
+    font-size: 42px;
+    font-weight: 700;
+    color: #333333;
+    margin-bottom: 45px;
+}
+
+.my-account .right .content p{
+    color: #595959;
+    text-align: center;
+}
+
+.my-account .right .content .para2{
+    margin-bottom: 10px;
+}
+
+.my-account .right .content .para3{
+    margin: 30px 0 20px;
+}
+
+.my-account .right .thnaks-btn{
+    font-size: 12px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #3D387D;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #ffffff;
+}

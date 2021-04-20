@@ -1,0 +1,72 @@
+.sec-newyear{
+    background-image:url("../images/sec-newyear/promotion-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 305px;
+    width: 100%;
+}
+
+.sec-newyear .section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 767px) {
+    .sec-newyear .section-container {
+        grid-template-columns: 1fr;
+    }
+
+    .sec-newyear .right .right-content{
+        flex-basis: 100%;
+    }
+}
+
+.sec-newyear .right{
+    display: flex;
+    align-items: center;
+}
+
+.sec-newyear .right .right-content{
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-newyear .right .right-content *{
+    font-family: montserratmedium, sans-serif;
+}
+
+.sec-newyear .right .right-text1{
+    text-shadow: 0 0 2px #fff,
+    -2px -2px 2px hsl(80, 10%, 15%);
+}
+
+.sec-newyear .right .right-text2{
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' stroke='white' stroke-width='6' stroke-dasharray='10' stroke-dashoffset='6' stroke-linecap='square'/%3e%3c/svg%3e");
+    display: inline-block;
+    margin: 16px 0 28px;
+    width: 237px;
+    height: 68px;
+    text-align: center;
+    line-height: 68px;
+    text-shadow: 0 0 2px #fff,
+    -2px -2px 2px hsl(80, 10%, 15%);
+}
+
+.sec-newyear .right .right-text3{
+    text-align: center;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-newyear{
+        height: auto;
+        padding: 25px 0;
+    }
+    .sec-newyear .left img{
+        width: 100%;
+        height: auto;
+    }
+}

@@ -1,0 +1,217 @@
+header .nav-link:not(.sign-in) a{
+    color: #FFFFFF;
+}
+
+header .nav-link:not(.sign-in) a{
+    color: #FFFFFF;
+}
+
+header .logo .logo-info p{
+    color: #000000;
+}
+
+@media screen and (max-width: 991px){
+    header .logo .logo-info p{
+        color: #FFFFFF;
+    }
+}
+
+header.active .logo .logo-info p{
+    color: #FFFFFF;
+}
+
+.sec-hero .left h1,
+.sec-hero .left p{
+    color: #000000;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .left h1,
+    .sec-hero .left p{
+        color: #FFFFFF;
+    }
+}
+
+
+.sec-hero .hero-left {
+    background : url("../../images/others/dropshipping/hero-left.png") no-repeat top right;
+    /*background-size: 68% 100%;*/
+    background-size: 955px 674px;
+}
+
+@media screen and (min-width: 992px) {
+    .sec-hero{
+        overflow-x: hidden;
+    }
+
+    /*.sec-hero .hero-left{*/
+    /*    background-size: 100% 105%;*/
+    /*}*/
+
+    .sec-hero .section-container .right img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (min-width: 1300px) {
+    .sec-hero .section-container .right .img-wrapper{
+        position: relative;
+    }
+    .sec-hero .section-container .right img {
+        position: absolute;
+        top: 0px;
+        /*left: -70px;*/
+        width: initial;
+        height: initial;
+    }
+}
+
+@media screen and (min-width: 1400px){
+    .sec-hero .section-container .right img{
+        left: 50px
+    }
+}
+
+
+@media screen and (min-width: 1200px){
+    .sec-hero .left h1{
+        font-size: 41px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero{
+        padding-bottom: 0;
+    }
+}
+
+.sec-hero .section-container .left p img{
+    top: 100%;
+    left: 35%;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-info .section-container .left{
+        display: block;
+    }
+}
+
+.sec-hero .btn-price{
+    border: 2px solid #652C8A;
+}
+.sec-hero .left .left-container{
+    position: relative;
+}
+
+.sec-hero .left .circle{
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    animation: zoom 4s infinite;
+}
+
+.sec-hero .left .path{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+}
+
+.sec-hero .left .triangle{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    animation: zoom 4s infinite;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .left .circle{
+        top: -50px;
+        left: 15px;
+    }
+    .sec-hero .left .path{
+        bottom: 70px;
+        top: initial;
+        right: 0;
+    }
+
+    .sec-hero .left .triangle{
+        top: 0;
+        bottom: initial;
+        right: 0;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.8);
+    }
+}
+
+
+#mobileapp{
+    position: relative;
+}
+
+.spinner{
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    width: calc(100% + 20px);
+    height: calc(100% + 20px);
+    z-index: 99;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,.25);
+}
+
+.spinner.active{
+    display: flex;
+}
+
+.lds-dual-ring {
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+}
+.lds-dual-ring:after {
+    content: " ";
+    display: block;
+    width: 64px;
+    height: 64px;
+    margin: 8px;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    border-color: #fff transparent #fff transparent;
+    animation: lds-dual-ring 1.2s linear infinite;
+}
+@keyframes lds-dual-ring {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.success{
+    padding: 25px 75px;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    display: none;
+}
+
+.success img{
+    margin-bottom: 25px;
+}
+
+.success p{
+    text-align: center;
+}

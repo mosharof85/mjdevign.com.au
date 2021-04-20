@@ -1,0 +1,137 @@
+.s__services .heading{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.s__services .heading .sub{
+    font-family: hind_vadodaramedium, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e80566;
+}
+
+.s__services .heading .title{
+    font-family: fira_sansextrabold, sans-serif;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.s__services .heading .red-border{
+    position: relative;
+    display: block;
+    width: 115px;
+    height: 3px;
+    background: #e80566;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.s__services .heading .red-border::after{
+    position: absolute;
+    content: "";
+    width: 35px;
+    height: 3px;
+    left: 15px;
+    bottom: 0;
+    border-left: 10px solid #fff;
+    border-right: 10px solid #fff;
+    animation: animborder 2s linear infinite;
+}
+
+@keyframes animborder {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(113px);
+    }
+}
+
+.s__services .heading .description{
+    font-family: hind_vadodaralight, sans-serif;
+    font-size: 17px;
+    color: #595959;
+    margin-bottom: 20px;
+}
+
+.s__services .services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+.s__services .service{
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+    box-shadow: 0.00px 1.00px 19px 6px rgba(0,0,0,0.18);
+}
+
+.s__services .service p.one{
+    font-family: montserratmedium, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #172b43;
+}
+
+.s__services .lineheight1 {
+    line-height: 1.8;
+}
+
+.s__services .text-15px {
+    font-size: 15px;
+}
+
+.s__services .text-black2 {
+    color: #595959;
+}
+
+.s__services .service a{
+    color: #495057;
+    font-weight: 600;
+    font-family: montserratmedium, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.s__services .service:hover {
+    background: linear-gradient(
+            45deg
+            , #261F57, #5D2769);
+}
+
+.s__services .service:hover * {
+    color: #ffffff !important;
+    transition: color .3s ease;
+}
+
+.s__services .service a img{
+    margin-left: 10px;
+}
+
+.s__services .service a img.hover{
+    display: none;
+}
+
+.s__services .service:hover{
+    background: linear-gradient(45deg, #261F57, #5D2769);
+}
+
+.s__services .service:hover a img.normal{
+    display: none;
+}
+
+.s__services .service:hover a img.hover{
+    display: block;
+}

@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap');
+@font-face {
+    font-family: 'futura web';
+    src: url('fonts/futura_book_regular-webfont.woff2') format('woff2'),
+    url('fonts/futura_book_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/opensans-regular-webfont.woff2') format('woff2'),
+    url('fonts/opensans-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'open_sansbold';
+    src: url('fonts/opensans-bold-webfont.woff2') format('woff2'),
+    url('fonts/opensans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'poppinssemibold';
+    src: url('fonts/poppins-semibold-webfont.woff2') format('woff2'),
+    url('fonts/poppins-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('fonts/montserrat-regular-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratmedium';
+    src: url('fonts/montserrat-medium-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratsemibold';
+    src: url('fonts/montserrat-semibold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('fonts/montserrat-bold-webfont.woff2') format('woff2'),
+    url('fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fira_sansmedium';
+    src: url('fonts/firasans-medium-webfont.woff2') format('woff2'),
+    url('fonts/firasans-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fira_sansbold';
+    src: url('fonts/firasans-bold-webfont.woff2') format('woff2'),
+    url('fonts/firasans-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'fira_sansextrabold';
+    src: url('fonts/firasans-extrabold-webfont.woff2') format('woff2'),
+    url('fonts/firasans-extrabold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hind_vadodaralight';
+    src: url('fonts/hindvadodara-light-webfont.woff2') format('woff2'),
+    url('fonts/hindvadodara-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hind_vadodaramedium';
+    src: url('fonts/hindvadodara-medium-webfont.woff2') format('woff2'),
+    url('fonts/hindvadodara-medium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hind_vadodararegular';
+    src: url('fonts/hindvadodara-regular-webfont.woff2') format('woff2'),
+    url('fonts/hindvadodara-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+@font-face {
+    font-family: 'hind_vadodarasemibold';
+    src: url('fonts/hindvadodara-semibold-webfont.woff2') format('woff2'),
+    url('fonts/hindvadodara-semibold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'hind_vadodarabold';
+    src: url('fonts/HindVadodara-Bold.woff2') format('woff2'),
+    url('fonts/HindVadodara-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    background-color: #F4F6F9;
+}
+
+ul{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+main{
+    padding: 0 30px;
+    background-color: #EAEDF7;
+}
+
+@media screen and (max-width: 600px) {
+    main{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    main{
+        padding: 0;
+    }
+}
+
+.f-opensans{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.f-montserrat{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.heading1{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.heading2{
+    color: #595959;
+    font-size: 14px;
+    line-height: 20px;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+.text-bold{
+    font-size: 14px;
+    line-height: 25px;
+    font-weight: 700;
+}
+
+.text-normal{
+    color: #595959;
+    font-size: 14px;
+    line-height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.border-top{
+    border-top: 1px solid #E3E7F0;
+}
+
+.border-bottom{
+    border-bottom: 1px solid #E3E7F0;
+}
+
+.padding-extra{
+    padding: 30px 15px !important;
+}
+
+body.screen-overflow .overflow-controller{
+    overflow-x: auto;
+    width: calc(100vw - 90px);
+}
+
+@media screen and (max-width: 600px) {
+    body.screen-overflow .overflow-controller{
+        width: calc(100vw - 60px);
+    }
+}
+
+@media screen and (max-width: 450px) {
+    body.screen-overflow .overflow-controller{
+        width: calc(100vw - 30px);
+    }
+}
+
+.s_between
+{
+  
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+.s_betweens
+{
+        border-bottom: 1px solid #E3E7F0;
+    /* padding: 10px; */
+    padding-bottom: 19px;
+    display: flex;
+    justify-content: space-between;
+    margin: 15px;
+
+}
+.s_between .bold
+{
+    font-size: 14px;
+}
+
+

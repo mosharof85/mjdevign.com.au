@@ -1,0 +1,154 @@
+.mt-2
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.optionalRow
+{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    height: 115px;
+    border: 2px solid #E5E7F2;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-top: 8px;
+}
+
+.optionalRow .left
+{
+    width: 150px;
+    background: #2B074D;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    width: 16%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 0px 5px;
+    position: relative; 
+}
+
+.optionalRow .left p
+{
+    font-size: 11px;
+    font-weight: 700;
+    margin-top: 10px;
+    position: absolute; top: 50; right: 50;
+}
+
+.left img
+{
+    width: fit-content;
+}
+
+.optionalRow .right
+{
+    background: #F4F6F9;
+    width: 84%;
+    height: 100%;
+    padding: 10px 20px;
+}
+
+.optionalRow .right .bold
+{
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 6px;
+	    font-weight: 600;
+}
+
+.optionalRow .right input
+{
+    margin-right: 10px;
+}
+
+.optionalRow .right .details
+{
+    color: #333;
+    font-size: 13px;
+    margin-top: 8px;
+}
+
+.optionalRow .right .details a
+{
+    color: #333;
+}
+
+.checkBox select
+{
+    border-radius: 5px;
+    padding: 4px;
+}
+
+.checkBox select:focus
+{
+    border: 1px solid #2B074D;
+}
+
+
+@media only screen and (max-width:650px)
+{
+    .optionalRow
+    {
+        height: auto;
+    }
+
+    .optionalRow > div
+    {
+        width: 100% !important;
+    }
+
+    .optionalRow .left
+    {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        padding: 10px;
+        align-items: center !important;
+    }
+
+    .optionalRow .left p
+    {
+        margin-left: 10px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+}
+
+.fa.fa-trash-o:hover{
+    cursor: pointer;
+    color: red;
+}
+
+/*stripe*/
+
+.StripeElement {
+    box-sizing: border-box;
+
+    height: 40px;
+
+    padding: 10px 12px;
+
+    border: 2px solid #ced4da;
+    border-radius: 4px;
+    background-color: white;
+
+    box-shadow: 0 1px 3px 0 #e6ebf1;
+    -webkit-transition: box-shadow 150ms ease;
+    transition: box-shadow 150ms ease;
+    width: 330px;
+}
+
+.StripeElement--focus {
+    border-color: #ced4da;
+    box-shadow: 0 1px 3px 0 #cfd7df;
+}
+
+.StripeElement--invalid {
+    border-color: #fa755a;
+    color: black;
+}

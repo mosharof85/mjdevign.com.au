@@ -1,0 +1,125 @@
+
+script {display:none;}
+
+
+.navbar.transparent.navbar-inverse .navbar-inner {
+    background: rgba(0,0,0,0.4);
+    }
+    body{
+        background:  url('/images/banner.png');
+        background-size: cover;
+        background-position: bottom;
+        height: 100vh;
+        background-repeat: no-repeat;
+        font-family: 'Open Sans', sans-serif;
+    }
+    main{
+        width: 95%;
+        margin: 0 auto;
+    }
+    
+    .logo{
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3px;
+    }
+    .logo span{
+        letter-spacing: 1px;
+    }
+    
+    .packages{
+        display: flex;
+        margin-top: 40px;
+    }
+    .package a{
+        color: #000000;
+        text-decoration: none;
+        padding: 10px 35px;
+        background-color: #FFFFFF;
+        border-radius: 10px;
+        font-weight: 600;
+        position: relative;
+    }
+    
+    .package a::after{
+        position: absolute;
+        content: '';
+        width: 0%;
+        height: 3px;
+        background: linear-gradient(to right, #1A2B77, #8C186B);
+        left: 50%;
+        transform: translateX(-50%);
+        bottom: 5px;
+        border-radius: 5px;
+    }
+    
+    .package a:hover::after{
+        width: 80%;
+        transition: all .3s ease;
+    }
+    
+    .two, .three{
+        margin: 0 15px;
+    }
+    
+    nav .logo{
+        display: flex;
+        align-items: center;
+    }
+    
+    nav .logo img{
+        width: 55px;
+        height: 55px;
+        margin-right: 10px;
+    }
+    
+    nav .logo-info p:nth-child(1){
+        font-family: "Open Sans", sans-serif;
+        font-size: 20px;
+        font-weight: 700;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #FFFFFF;
+    }
+    
+    nav .logo-info p:nth-child(2){
+        font-family: "Open Sans", sans-serif;
+        font-size: 16px;
+        margin-top: 0;
+        margin-bottom: 0;
+        color: #FFFFFF;
+    }
+    
+    @media screen and (max-width: 620px){
+        .two{
+            margin: 0;
+        }
+    
+        .packages{
+            flex-direction: column;
+        }
+    
+        .package a{
+            padding: 0;
+        }
+    
+        .package{
+            width: 200px;
+            padding: 10px;
+            margin: 10px 0;
+            text-align: center;
+            background-color: #FFFFFF;
+            border-radius: 10px;
+        }
+    
+        .package a::after{
+            bottom: -5px;
+        }
+    
+        .package:hover a::after{
+            width: calc(100% + 20px);
+            transition: all .3s ease;
+        }
+    }
+    

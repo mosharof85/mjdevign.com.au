@@ -1,0 +1,96 @@
+.sec-services{
+    padding: 74px 0 70px;
+    background-color: #F6F6F6;
+}
+
+.sec-services .section-container.services{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+}
+
+@media screen and (min-width: 500px) and  (max-width: 991px){
+    .sec-services .section-container.services{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 499px){
+    .sec-services .section-container.services{
+        grid-template-columns: 1fr;
+    }
+}
+
+.sec-services .service{
+    text-align: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    transition: background-color .3s ease;
+    cursor: pointer;
+}
+
+.sec-services .service a{
+    color: #495057;
+    font-weight: 600;
+    font-family: montserratmedium, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+.sec-services .service a img{
+    margin-left: 10px;
+}
+
+.sec-services .service a img.hover{
+    display: none;
+}
+
+.sec-services .service:hover{
+    background: linear-gradient(45deg, #261F57, #5D2769);
+}
+
+.sec-services .service:hover a img.normal{
+    display: none;
+}
+
+.sec-services .service:hover a img.hover{
+    display: block;
+}
+
+.sec-services .sub{
+    font-family: hind_vadodaramedium, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #e80566;
+}
+
+.sec-services .title{
+    font-family: fira_sansextrabold, sans-serif;
+    font-size: 46px;
+    margin-bottom: 20px;
+}
+
+.sec-services .description{
+    font-family: hind_vadodaralight, sans-serif;
+    font-size: 17px;
+    color: #595959;
+    margin-bottom: 20px;
+}
+
+.sec-services .service p.one{
+    font-family: montserratmedium, sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 20px 0;
+    color: #172b43;
+}
+
+.sec-services .service:hover *{
+    color: #ffffff !important;
+    transition: color .3s ease;
+}

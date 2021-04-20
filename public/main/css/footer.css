@@ -1,0 +1,154 @@
+footer{
+    background-image: url("../images/footer-bg.jpg");
+    background-size: 100% 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media  screen and (min-width: 1280px) {
+
+    footer {
+        height: 275px;
+    }
+}
+
+@media  screen and (max-width: 1279px) {
+
+    footer {
+        padding: 50px 0;
+    }
+}
+
+
+footer *{
+    color: #FFFFFF;
+}
+
+footer .section-container{
+    display: grid;
+    grid-template-columns: 31% 22% 22% 25%;
+    grid-gap: 30px;
+}
+
+@media  screen and (max-width: 1279px) {
+
+    footer .section-container{
+        grid-template-columns: repeat(2,1fr);
+    }
+}
+
+@media  screen and (max-width: 767px) {
+
+    footer .section-container{
+        grid-template-columns: 1fr;
+    }
+}
+
+footer .col.one .part1{
+    display: flex;
+    align-items: center;
+}
+
+footer .col.one .col-title p{
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+footer .col.one .col-title .info1{
+    font-size: 22px;
+    font-family: poppinssemibold, sans-serif;
+    margin-top: 2px;
+}
+
+footer .col.one .col-title .info2{
+    font-size: 17px;
+    font-family: hind_vadodaralight, sans-serif;
+}
+
+footer .col.one .part1 img{
+    margin-right: 10px;
+}
+
+footer .col.one .info{
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+
+footer .col.one .social-links span{
+    font-size: 14px;
+    margin-right: 25px;
+}
+
+footer .col:not(.one) .col-title{
+    font-family: montserratregular, sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    height: 55px;
+    line-height: 55px;
+}
+
+footer .col:not(.one) .col-content{
+    margin-top: 15px;
+}
+
+footer .col .col-content ul li a{
+    font-size: 13px;
+    line-height: 2.3;
+}
+
+footer .col.four .col-content p{
+    font-size: 14px;
+    line-height: 2.3;
+}
+
+footer .col.four .col-content .address,
+footer .col.four .col-content .email{
+    display: flex;
+    align-items: center;
+}
+
+footer .col.four .col-content .fas{
+    margin-right: 10px;
+}
+
+footer .subscribe{
+    position: relative;
+    margin-top: 1em;
+}
+
+footer .subscribe input{
+    height: 45px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-radius: 30px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: "Open Sans", sans-serif;
+    padding-top: 0;
+    padding-right: 0;
+    padding-bottom: 0;
+    padding-left: 15px;
+    outline: none;
+}
+
+footer .subscribe button{
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 45px;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    background-color: #ff3372;
+    display: inline-block;
+    text-transform: uppercase;
+    color: #ffffff;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 14px;
+    font-weight: 600;
+}

@@ -1,0 +1,127 @@
+.logo-image_1,
+.logo-image_1 > .row{
+    width: 100%;
+}
+
+.colTop{
+    padding-left: 0;
+}
+
+.step img{
+    height: 36px;
+}
+
+.stores{
+    padding: 3px 15px;
+}
+
+.stores .optionalContent,
+.order{
+    padding-left: 0;
+    padding-right: 0;
+}
+
+input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder { /* Edge */
+    font-size: 14px;
+}
+
+input:-ms-input-placeholder,
+textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-size: 14px;
+}
+
+input::placeholder,
+textarea::placeholder {
+    font-size: 14px;
+}
+
+@media screen and (min-width: 720px){
+    .logo-image_1 .row .col-md-10 .row *{
+        display: inline-block;
+        width: auto;
+        flex: 0 0 auto;
+    }
+    .logo-image_1 .row .col-md-10 .row{
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .logo-image_1 > .row > .col-md-2{
+        flex: 0 0 16.67%;
+        max-width: 16.67%;
+    }
+
+    .logo-image_1 > .row > .col-md-10{
+        flex: 0 0 83.33%;
+        max-width: 83.33%;
+    }
+}
+
+@media screen and (max-width: 719px){
+    .logo-image_1 > .row > .col-md-10 .text-right{
+        text-align: center !important;
+    }
+
+    .logo-image_1 > .row *{
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media screen and (min-width: 720px)  and (max-width: 850px) {
+    .colTop{
+        justify-content: space-between;
+    }
+}
+
+@media screen and (max-width: 719px) {
+    .colTop{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 1279px) {
+
+    .content {
+        flex-direction: column;
+    }
+
+    .content .col1 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .content .col1 .activeBody .category > * {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .content .col2 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .order-column,
+    .order{
+        max-width: 100% !important;
+        margin-top: 40px;
+    }
+    .order{
+        max-width: 100% !important;
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+
+
+    .col1,
+    .col2{
+        padding: 0 10px !important;
+    }
+}

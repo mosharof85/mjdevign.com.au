@@ -1,0 +1,51 @@
+.form
+{
+    width: 100%;
+    padding: 0px 20px;
+}
+
+.form .bold
+{
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-size: 16px;
+    margin-top: 25px;
+}
+
+.form textarea
+{
+    width: 100%;
+    background: #F6F6F6;
+    border: 1px solid #B6B6B6;
+    border-radius: 5px;
+    resize: none;
+    /* height: 130px; */
+    padding: 10px;
+    outline: none;
+}
+
+.upload
+{
+    width: 100%;
+    background: #F6F6F6;
+    border: 1px solid #B6B6B6;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    margin-top: 5px;
+}
+
+.browseBtn
+{
+    border-radius: 50px;
+    border: 2px solid #595959;
+    padding: 8px 30px;
+    margin-top: 5px;
+}
+
+.form textarea {
+background: #f4f6f9;
+}

@@ -1,0 +1,67 @@
+.sec-process{
+    background-image: url("../images/sec-process/process.png");
+    padding: 70px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 470px;
+}
+
+.sec-process .process-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    min-width: 930px;
+}
+
+.sec-process .box{
+    position: relative;
+}
+
+.sec-process .img{
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 146px;
+    height: 146px;
+    background-color: rgba(255,255,255,.3);
+    border-radius: 50%;
+    border: 10px solid #ffffff;
+}
+
+.sec-process .img img{
+    position: absolute;
+    top: 50%;
+    left: calc( 50% + 5px);
+    transform: translate(-50%, -50%);
+}
+
+.sec-process .box:last-of-type .img img{
+    left: 50%;
+}
+
+.sec-process svg{
+    position: absolute;
+    width: 25px;
+    height: 16px;
+    fill: #ffffff;
+    right: 0;
+    top: 75px;
+    transform: rotate(90deg);
+}
+
+.sec-process .heading{
+    font-family: montserratbold, sans-serif;
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 38px;
+    margin-bottom: 70px;
+}
+
+.sec-process .box .title{
+    color: #e80566;
+    text-align: center;
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-family: open_sansbold, sans-serif;
+}

@@ -1,0 +1,109 @@
+.my-order .grid-table{
+    padding: 0 0 100px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    min-width: 980px;
+}
+
+.s__my-order {
+    position: relative;
+}
+
+.s__my-order .checkout-btn{
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.s__my-order .checkout-btn a{
+    display: inline-block;
+    width: 130px;
+    height: 40px;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 8px;
+    color: #ffffff;
+    background-color: #6B4EFC;
+}
+
+.my-order .grid-table .data{
+    display: grid;
+    grid-template-columns: 1.5fr .75fr 1.25fr repeat(4, 1fr) 1fr;
+    grid-column-gap: 15px;
+    padding: 15px 15px;
+}
+
+.my-order .td-details a,
+.my-order .td-status span{
+    display: inline-block;
+    color: #ffffff;
+    font-size: 12px;
+    background-color: #B6B6B6;
+    width: 91px;
+    height: 31px;
+    text-align: center;
+    line-height: 31px;
+    border-radius: 35px;
+    cursor: pointer;
+}
+
+.my-order .td-details a{
+    width: 106px;
+    background-color: transparent;
+    position: relative;
+    z-index: 99;
+}
+
+.my-order .td-details a::after{
+    content: '';
+    width: 106px;
+    height: 31px;
+    background-color: #6F50FC;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 35px;
+    z-index: -1;
+}
+
+.my-order .td-details a::before{
+    content: '';
+    width: 106px;
+    height: 31px;
+    background-color: #FFD7C8;
+    position: absolute;
+    top: 3px;
+    left: 0;
+    border-radius: 35px;
+    z-index: -1;
+}
+
+/*.my-order .td-details span:hover{*/
+/*    background-color: #FF8052;*/
+/*    transition: all .3s ease;*/
+/*}*/
+
+.my-order .td-status.UnderReview span{
+    background-color: #B6B6B6;
+}
+
+.my-order .td-status.Developing span{
+    background-color: #384AD3;
+}
+
+.my-order .td-status.Completed span{
+    background-color: #38C68B;
+}
+.my-order .td-status.Refunded span{
+    background-color: #FF4040;
+}
+
+/*.my-order .td-status span:hover{*/
+/*    text-transform: uppercase;*/
+/*    font-style: italic;*/
+/*    letter-spacing: 1.2px;*/
+/*    font-weight: 400;*/
+/*    transition: all .3s ease;*/
+/*}*/

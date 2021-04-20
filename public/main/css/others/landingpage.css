@@ -1,0 +1,122 @@
+.sec-hero .hero-left{
+    background : url("../../images/others/landingpage/hero-left.png") no-repeat top right;
+    /*background-size: 68% 100%;*/
+    background-size: 955px 674px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .hero-left{
+        background-image: none;
+    }
+}
+
+header .nav-link:not(.sign-in) a{
+    color: #FFFFFF;
+}
+
+header .logo .logo-info p{
+    color: #000000;
+}
+
+@media screen and (max-width: 991px){
+    header .logo .logo-info p{
+        color: #FFFFFF;
+    }
+}
+
+header.active .logo .logo-info p{
+    color: #FFFFFF;
+}
+
+.sec-hero .left h1,
+.sec-hero .left p{
+    color: #000000;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .left h1,
+    .sec-hero .left p{
+        color: #FFFFFF;
+    }
+}
+
+.sec-hero .section-container .left .btn-price{
+    border: 2px solid #652C8A;
+    line-height: 46px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .section-container .left .btn-price{
+        line-height: 26px;
+    }
+}
+
+
+.sec-hero .left .left-container{
+    position: relative;
+}
+
+.sec-hero .left .circle{
+    position: absolute;
+    top: 60px;
+    left: -50px;
+    animation: zoom 4s infinite;
+}
+
+.sec-hero .left .path{
+    position: absolute;
+    top: 60px;
+    right: 50px;
+}
+
+.sec-hero .left .triangle{
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+    animation: zoom 4s infinite;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .left .circle{
+        top: -50px;
+        left: 15px;
+    }
+    .sec-hero .left .path{
+        bottom: 70px;
+        top: initial;
+        right: 0;
+    }
+
+    .sec-hero .left .triangle{
+        top: 0;
+        bottom: initial;
+        right: 0;
+    }
+}
+@keyframes zoom {
+    0%{
+        transform: scale(.8);
+    }
+    50%{
+        transform: scale(1);
+    }
+    100%{
+        transform: scale(.8);
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero{
+        padding-bottom: 0;
+    }
+}
+
+.sec-package .package.four .list-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.sec-package .package.four .list-item img{
+    margin-right: 20px;
+}

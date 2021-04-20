@@ -1,0 +1,129 @@
+.sec-faq{
+    padding: 70px 0;
+    background-color: #F6F6F6;
+}
+
+.sec-faq .section-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.sec-faq .faq{
+    font-size: 15px;
+    color: #707070;
+}
+
+.sec-faq .faq .side{
+    float: left;
+    width: calc(50% - 25px);
+}
+
+@media screen and (max-width: 991px){
+    .sec-faq .faq .side{
+        float: none;
+        width: 100%;
+    }
+}
+
+.sec-faq .faq .side.left{
+    margin-right: 25px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-faq .faq .side.left{
+        margin-right: 0;
+    }
+}
+
+.sec-faq .faq .side.right{
+    margin-left: 25px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-faq .faq .side.right{
+        margin-left: 0;
+    }
+}
+
+.sec-faq .faq .item-q{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: montserratregular, sans-serif;
+    font-weight: 600;
+    padding: 30px 20px;
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+}
+
+.sec-faq .faq .item-q:after{
+    content: "+";
+    position: absolute;
+    right: 1.5rem;
+    top: 50%;
+    transform: translateY(-50%);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.sec-faq .faq .item-q p{
+    margin-left: 20px;
+}
+
+.sec-faq .faq .item .item-a{
+    font-family: open_sansregular, sans-serif;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: all .3s ease;
+}
+
+.sec-faq .faq .item.active .item-a{
+    padding: 25px 20px;
+    max-height: 1000px;
+}
+
+.sec-faq .faq .side{
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    border: 1px solid rgba(0,0,0,.125);
+}
+
+.sec-faq .faq .side .item:not(:first-of-type) {
+    border-top: 1px solid rgba(0,0,0,.125);
+}
+
+.sec-faq .faq .side .item.active .item-q {
+    border-bottom: 1px solid #EFF2F7;
+}
+
+
+@media screen and (max-width: 550px) {
+    .sec-faq .title{
+        font-size: 30px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sec-faq .title{
+        font-size: 25px;
+    }
+}
+
+.sec-faq .sub{
+    font-family: hind_vadodaramedium, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 16px;
+    color: #e80566;
+}
+
+.sec-faq .title{
+    font-family: fira_sansextrabold, sans-serif;
+    font-size: 44px;
+    margin-bottom: 17px;
+}

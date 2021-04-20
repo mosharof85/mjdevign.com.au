@@ -1,0 +1,47 @@
+.extra__container__fluid {
+    padding-left: 0;
+}
+.extra__logo__class {
+    padding-left: 10px;
+}
+.extra__logo__class img {
+    margin-right: 4px;
+}
+.logo__block {
+    padding: 13px 15px 13px 16px;
+}
+.logo-image_1 {
+    padding-top: 10px;
+}
+.form-check {
+    padding-left: 1rem!important;
+}
+.form-check2 input {
+    display: none;
+}
+.form-check label {
+    position: relative;
+}
+.form-check2 label::before {
+    content: " ";
+    display: inline-block;
+    position: relative;
+    top: 0;
+    margin: 0 5px 0 0;
+    min-width: 17px;
+    height: 17px;
+    border-radius: 11px;
+    border: 1px solid #b4b4b4;
+    background-color: #efeff0;
+}
+.form-check2 input[type=radio]:checked + label:after {
+    content: " ";
+    border-radius: 4px;
+    width: 9px;
+    height: 8px;
+    position: absolute;
+    top: 5px;
+    left: 4px;
+    display: block;
+    background: #000;
+}

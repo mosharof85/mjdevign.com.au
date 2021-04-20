@@ -1,0 +1,232 @@
+.sec-hero{
+    min-height: 721px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding: 70px 0;
+}
+
+@media screen and (min-width: 1920px){
+    .sec-hero{
+        min-height: 961px;
+    }
+}
+
+.sec-hero .hero-left{
+    background : url("../images/hero-bg1.jpg") no-repeat top left;
+    position: absolute;
+    right: auto;
+    left: 0;
+    bottom: auto;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 991px){
+    .sec-hero .hero-left{
+        background : url("../images/hero-bg1.jpg") no-repeat top left !important;
+        background-size: 145% 100% !important;
+        top: 0;
+    }
+}
+
+@media screen and (min-width: 1799px) {
+    .sec-hero .hero-left {
+        background-size: 55% 100%;
+    }
+}
+
+.sec-hero .section-container{
+    display: flex;
+    margin-top: -28px;
+}
+
+.sec-hero .section-container > div{
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero .section-container{
+        margin-top: -60px;
+    }
+
+    .sec-hero .section-container .left{
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .sec-hero .section-container .right{
+        display: none;
+    }
+
+}
+
+.sec-hero .section-container .left{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.sec-hero .section-container .left h4{
+    color: #F2184B;
+}
+
+.sec-hero .section-container .left h1 span{
+    display: block;
+}
+
+@media screen and (min-width: 992px) {
+    .sec-hero .section-container .left h4{
+        margin-top: 75px;
+    }
+}
+
+.sec-hero .section-container .left .btn-price,
+.sec-hero .section-container .left .btn-start{
+    width: 170px;
+    height: 50px;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    border-radius: 8px;
+    font-family: montserratsemibold, sans-serif;
+    font-size: 14px;
+}
+
+.sec-hero .section-container .left .btn-price{
+    background-color: #FFFFFF;
+    color: #652C8A;
+    transition: all .3s ease;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero .section-container .left .btn-price{
+        margin-bottom: 20px;
+        margin-right: 0;
+    }
+}
+
+.sec-hero .section-container .left .btn-price:hover{
+    background-color: #652C8A;
+    color: #ffffff;
+}
+
+.sec-hero .section-container .left .btn-start{
+    background-color: #E80566;
+    color: #ffffff;
+    transition: background-color .3s ease;
+}
+
+.sec-hero .section-container .left .btn-start:hover{
+    background-color: #000000;
+}
+
+@media screen and (max-width: 991px) {
+    .sec-hero .section-container .left .buttons{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.sec-hero .section-container .left p{
+    position: relative;
+}
+
+.sec-hero .section-container .left p img{
+    display: none;
+    position: absolute;
+    top: calc(100% - 10px);
+    left: 40%;
+    max-width: 64%;
+    z-index: 1;
+}
+
+.sec-hero .section-container .right img{
+    width: 584px;
+    height: 584px;
+}
+
+@media screen and (max-width: 1199px) {
+    .sec-hero .section-container .right img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 991px){
+
+    .sec-hero .section-container .left p{
+        margin-bottom: 25px;
+    }
+
+    .sec-hero .section-container .left p img{
+        display: block;
+    }
+
+    .sec-hero .section-container .left .btn-price,
+    .sec-hero .section-container .left .btn-start{
+        width: 130px;
+        height: 30px;
+        line-height: 30px;
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .sec-hero .left h1{
+        font-size: 30px;
+    }
+    .sec-hero .left h1 .one{
+        font-size: 37px;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .sec-hero .left h4{
+        font-size: 16px;
+    }
+
+    .sec-hero .left p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sec-hero .left h1{
+        font-size: 25px;
+    }
+
+    .sec-hero .left h1 .one{
+        font-size: 32px;
+    }
+}
+
+.sec-hero .sub{
+    font-family: hind_vadodaramedium, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 17px;
+    color: #e80566;
+}
+
+.sec-hero .title{
+    font-family: fira_sansextrabold, sans-serif;
+    font-size: 48px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    color: #FFFFFF;
+}
+
+.sec-hero .description{
+    font-family: hind_vadodaralight, sans-serif;
+    font-size: 17px;
+    line-height: 1.6;
+    margin-bottom: 50px;
+    color: #FFFFFF;
+    padding-right: 10px;
+}
+

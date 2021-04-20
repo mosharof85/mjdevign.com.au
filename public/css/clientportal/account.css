@@ -1,0 +1,127 @@
+.account .display-flex{
+    display: flex;
+}
+
+.account .display-flex > div{
+    flex: 0 0 33.33%;
+}
+
+.account .one-col .display-flex > div:nth-child(1){
+    flex: 0 0 66.67%;
+}
+
+.account .one-col .display-flex > div:nth-child(2){
+    flex: 0 0 33.33%;
+}
+
+@media screen and (max-width: 1024px) {
+    .account .display-flex > div:nth-child(1),
+    .account .display-flex > div:nth-child(2){
+        flex: 0 0 42.5%;
+    }
+    .account .display-flex > div:nth-child(3){
+        flex: 0 0 15%;
+    }
+
+    .account .one-col .display-flex > div:nth-child(1){
+        flex: 0 0 85%;
+    }
+
+    .account .one-col .display-flex > div:nth-child(2){
+        flex: 0 0 15%;
+    }
+}
+
+.account .style1{
+    font-size: 17px;
+    line-height: 27px;
+    font-weight: 700;
+}
+
+.account .style2{
+    color: #333333;
+}
+
+.account .style3{
+    color: #595959;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+.account .mb-20{
+    margin-bottom: 20px;
+}
+
+.account .input{
+    width: 230px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #F6F6FA;
+    border: 1px solid #E3E7F0;
+    border-radius: 8px;
+    color: #6d6d6d;
+    font-size: 16px;
+    padding: 0 10px;
+}
+
+.account .input:focus{
+    background-color: #ffffff;
+}
+
+.account input:focus::placeholder {
+    color: transparent;
+}
+
+.account .input.input-2{
+    width: 356px;
+}
+
+.account{
+    width: 90%;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 20px 0;
+}
+
+@media screen and (max-width: 1024px){
+    .account{
+        width: 100%;
+    }
+}
+
+.account .padding-border{
+    padding: 20px 20px;
+    border-bottom: 1px solid #E3E7F0;
+}
+
+.account .action{
+    align-items: flex-end;
+}
+
+.account .action .btn a{
+    background-color: #3D387D;
+    color: #ffffff;
+    border-radius: 8px;
+    padding: 15px 30px;
+    font-size: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: 600;
+    letter-spacing: 1.2px;
+}
+
+.account .overflow-holder{
+    min-width: 605px;
+}
+
+.s__account .button span{
+    cursor: pointer;
+}
+
+.s__account .action{
+    display: none;
+}
+
+.s__account .action.active{
+    display: flex;
+}

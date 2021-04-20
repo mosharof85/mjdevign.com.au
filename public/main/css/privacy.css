@@ -1,0 +1,45 @@
+.sub-header{
+    background-color: #F6F6F3;
+    margin-top: 100px;
+    height: 62px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sub-header .section-container{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.sub-header svg{
+    width: 25px;
+    height: 24px;
+    margin-right: 20px;
+}
+
+.sub-header p{
+    font-size: 15px;
+    color: #757575;
+}
+
+.terms *{
+    font-size: 15px;
+}
+
+.section-title{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin: 50px 0;
+}
+
+.terms .para .title{
+    margin: 10px 0 20px;
+}
+
+.terms ul{
+    list-style: disc;
+    margin-left: 18px;
+}

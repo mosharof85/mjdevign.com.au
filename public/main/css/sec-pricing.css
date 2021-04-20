@@ -1,0 +1,209 @@
+.sec-pricing{
+    padding: 60px 0 70px;
+}
+
+
+.sec-pricing .section-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 50px;
+}
+
+@media screen and (max-width: 991px){
+    .sec-pricing .section-container{
+        grid-template-columns: 1fr;
+    }
+
+    .sec-pricing .section-container .left{
+        display: none;
+    }
+}
+
+.sec-pricing .left{
+    background: url("../images/pricing2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1199px){
+    .sec-pricing .left img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+.sec-pricing .left img{
+    width: 529px;
+    height: 538px;
+}
+
+.sec-pricing .right .right-content{
+    position: relative;
+}
+
+.sec-pricing .right .right-content img{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: calc( 100% - 15px);
+    max-width: 50%;
+    z-index: -1;
+}
+
+@media screen and (max-width: 500px){
+    .sec-pricing .right .right-content img{
+        max-width: 40%;
+    }
+}
+
+@media screen and (max-width: 991px){
+    .sec-pricing .right .right-content img{
+        display: block;
+    }
+}
+
+.sec-pricing .price{
+    color: #461C61;
+    font-size: 48px;
+    font-family: montserratbold, sans-serif;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+@media screen and (max-width: 550px) {
+    .sec-pricing .price{
+        font-size: 40px;
+    }
+}
+
+.sec-pricing .price span{
+    font-size: 24px;
+}
+
+@media screen and (max-width: 550px) {
+    .sec-pricing .price span{
+        font-size: 18px;
+    }
+}
+
+.sec-pricing .list{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8px;
+}
+
+@media screen and (max-width: 1199px) {
+    .sec-pricing .list{
+        grid-template-columns: 1fr;
+    }
+}
+
+.sec-pricing .list svg{
+    width: 12px;
+    height: 11px;
+    fill: #652c8a;
+    margin-right: 19px;
+}
+
+
+.sec-pricing .btn-getstart{
+    font-family: 'Montserrat', sans-serif;
+    width: 190px;
+    height: 46px;
+    border: 2px solid #652C8A;
+    color: #652C8A;
+    border-radius: 8px;
+    font-size: 16px;
+    line-height: 46px;
+    text-align: center;
+    font-weight: 700;
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.sec-pricing .btn-getstart:hover{
+    background-color: #652C8A;
+    color: #FFFFFF;
+    transition: all .3s ease;
+}
+
+.sec-pricing .msg{
+    color: #172b43;
+    font-size: 11px;
+    font-weight: 700;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sec-pricing .banks{
+    border-top: 1px solid #E3E7F0;
+    border-bottom: 1px solid #E3E7F0;
+}
+
+@media screen and (max-width: 550px) {
+    .sec-pricing .right .title{
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .sec-pricing .right .title{
+        font-size: 25px;
+    }
+}
+
+.sec-pricing .red-border.one{
+    display: none;
+}
+
+.sec-pricing .right .list.two{
+    display: none;
+}
+
+@media screen and (max-width: 991px){
+    .sec-pricing .red-border.one{
+        display: block;
+    }
+    .sec-pricing .red-border.two{
+        display: none;
+    }
+
+    .sec-pricing .right .list.two{
+        display: grid;
+    }
+
+    .sec-pricing .right .list.one{
+        display: none;
+    }
+}
+
+.sec-pricing .sub{
+    font-family: hind_vadodaramedium, sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 13px;
+    color: #e80566;
+}
+
+.sec-pricing .title{
+    font-family: fira_sansextrabold, sans-serif;
+    font-size: 46px;
+    line-height: 1.2;
+    margin-bottom: 22px;
+}
+
+.sec-pricing .list span,
+.sec-pricing .description{
+    font-family: hind_vadodaralight, sans-serif;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+.sec-pricing .description{
+    color: #595959;
+}
+
+.sec-pricing .list span {
+    margin-bottom: 0;
+}

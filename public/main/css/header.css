@@ -1,0 +1,233 @@
+header{
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    padding: 30px 0 10px;
+}
+
+@media screen and (max-width: 991px) {
+    header{
+        padding-top: 10px;
+    }
+}
+
+header.active{
+    /*background: linear-gradient(75deg, #65258a 10%, #e80566);*/
+    background-image: url("../images/menu-scroll-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 10px 0;
+    transition: all .3s ease;
+}
+
+header .logo{
+    display: flex;
+    align-items: center;
+}
+
+header .logo img{
+    /*width: 60px;*/
+    /*height: 60px;*/
+}
+
+header .logo .logo-info p{
+    line-height: 1.2;
+    color: #ffffff;
+}
+
+header .logo .logo-info .info1{
+    font-size: 22px;
+    font-family: poppinssemibold, sans-serif;
+    margin-top: 2px;
+}
+
+header .logo .logo-info .info2{
+    font-size: 17px;
+    font-family: hind_vadodaralight, sans-serif;
+}
+
+header .section-container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media screen and (min-width: 992px){
+    header nav ul:not(.sub-menu){
+        display: flex;
+        align-items: center;
+        height: 100%;
+    }
+
+    header nav .nav-link{
+        position: relative;
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    header nav .nav-link .sub-menu{
+        position: absolute;
+        top: calc(100% - 5px) ;
+        left: 0;
+        border-radius: 8px;
+        width: max-content;
+        /*display: none;*/
+        max-height: 0;
+        overflow: hidden;
+        transition: all .3s ease;
+    }
+
+    header nav .nav-link:hover .sub-menu{
+        padding: 10px 20px;
+        /*display: block;*/
+        max-height: 900px;
+    }
+
+    header .sub-menu{
+        background-image: url("../images/menu-scroll-bg.png");
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+    }
+}
+
+header nav .nav-link .sub-menu li{
+    padding: 10px 0;
+}
+
+header .toggler{
+    width: 20px;
+    height: 3px;
+    background-color: #FFFFFF;
+    position: relative;
+    display: none;
+    cursor: pointer;
+}
+
+header .toggler::before,
+header .toggler::after{
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -7px;
+    left: 0;
+    background-color: #FFFFFF;
+}
+header .toggler::after{
+    top: initial;
+    bottom: -7px;
+}
+
+header .nav-link:not(.sign-in) a{
+    font-size: 14px;
+    color: #323232;
+    margin: 0 20px;
+}
+
+header nav .sub-menu a{
+    margin: initial !important;
+    color: #FFFFFF !important;
+}
+
+header.active .nav-link:not(.sign-in) a{
+    color: #FFFFFF;
+}
+
+header .nav-link.sign-in a{
+    width: 95px;
+    height: 40px;
+    display: inline-block;
+    line-height: 40px;
+    text-align: center;
+    background-color: #E80566;
+    color: #ffffff;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+header.active .nav-link.sign-in a{
+    background-color: #65258a;
+}
+
+@media screen and (min-width: 992px){
+    header nav{
+        margin-right: 18px;
+    }
+}
+
+@media screen and (max-width: 991px) {
+    header nav{
+        flex-basis: 100%;
+        /*height: auto;*/
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height .3s ease;
+    }
+
+    /*header nav ul{*/
+    /*    flex-direction: column;*/
+    /*    align-items: flex-start;*/
+    /*}*/
+
+    header nav .nav-link .sub-menu{
+        padding: 10px 20px 0 30px;
+        margin-bottom: -10px;
+        display: none;
+    }
+
+    header nav .nav-link:hover .sub-menu{
+        display: block;
+    }
+
+    header .toggler{
+        display: block;
+    }
+    /*header{*/
+    /*    background: linear-gradient(75deg, #65258a 10%, #e80566) !important;*/
+    /*}*/
+
+    header .nav-link:not(.sign-in) a{
+        color: #FFFFFF !important;
+    }
+
+    header .nav-link{
+        color: #FFFFFF !important;
+        padding: 15px 0;
+    }
+}
+
+header .nav-link.dropdown > a{
+    background-color: #E94366;
+    border-radius: 8px;
+    margin-left: 0;
+    margin-right: 0;
+    height: auto;
+    padding: 13px 20px;
+    color: #FFFFFF !important;
+}
+
+header .nav-link.dropdown .dropdown-content{
+    top: 85%;
+    right: 0;
+    background-image: url("../images/menu-scroll-bg.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: fit-content;
+}
+
+header .nav-link.dropdown .dropdown-content a{
+    color: #FFFFFF !important;
+}
+
+@media screen and (max-width: 991px){
+    header .nav-link.dropdown > a{
+        display: none;
+    }
+
+    header .nav-link.dropdown .dropdown-content{
+        display: block;
+        position: initial;
+    }
+}
