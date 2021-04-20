@@ -39,7 +39,7 @@
     <link rel="stylesheet" href="{{ asset ( 'main/css/style.css' ) }}">
     <link rel="stylesheet" href="{{ asset ( 'main/css/header.css' ) }}">
     <!--<link rel="stylesheet" href="{{ asset ( 'main/css/sec-hero.css' ) }}">-->
-    
+
     <link rel="preload" href="{{ asset ( 'main/css/sec-hero.css' ) }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ asset ( 'main/css/sec-hero.css' ) }}"></noscript>
 
@@ -117,13 +117,12 @@
 
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"></noscript>
-    
+
     <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />-->
-    <!--<link rel="stylesheet" href="{{ asset ( 'main/themify-icons/themify-icons.css' ) }}">-->
     <link rel="icon" href="{{ asset ( 'main/images/diamond.ico' ) }}">
 
     <!--<link href="{{ asset('css/modal.css') }}" rel="stylesheet">-->
-    
+
     <link rel="preload" href="{{ asset('css/modal.css') }}" as="style" onload="this.onload=null;this.rel='stylesheet'">
     <noscript><link rel="stylesheet" href="{{ asset('css/modal.css') }}"></noscript>
     <style>
@@ -536,7 +535,7 @@
                             <input type="submit" style="cursor:pointer" value="Submit">
                         </div>
                     </form>
-                    
+
                     <div class="success" style="display:none">
                         <img src="main/images/email-success.png" alt="">
                         <p>Your message has been received and is under review!</p>
