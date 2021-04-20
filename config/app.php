@@ -1,7 +1,7 @@
 <?php
 
 return [
-    
+
     'stripe_key'=>env('STRIPE_KEY','pk_live_51INbugKwiQE8P57H7qTVYmamyyTeafeHJRcI7MtKJIkd1mSKgZ3CnojvfmfzoW1wgmQYtJpygWsBetZrS1pllPmH004RYmkPju'),
     'stripe_secret'=>env('STRIPE_SECRET','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'),
 
@@ -142,6 +142,7 @@ return [
         /*
          * Laravel Framework Service Providers...
          */
+        Sebdesign\ArtisanCloudflare\ServiceProvider::class,
         Illuminate\Auth\AuthServiceProvider::class,
         Illuminate\Broadcasting\BroadcastServiceProvider::class,
         Illuminate\Bus\BusServiceProvider::class,
